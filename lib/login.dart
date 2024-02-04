@@ -3,6 +3,7 @@ import 'Registro.dart';
 import 'login.dart';
 import 'Base_de_datos.dart';
 export 'package:flutter/material.dart';
+import 'package:instadamll/PaginaP.dart';
 
 class login extends StatefulWidget {
   login ({Key? key}) : super (key: key);
@@ -134,7 +135,7 @@ class _LoginA extends State <login> {
                             _contrasenaController.clear();
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => login()),
+                              MaterialPageRoute(builder: (context) => PaginaP()),
                             );
                           }
                           else if(!si) {
